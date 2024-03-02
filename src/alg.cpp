@@ -11,8 +11,7 @@ bool checkPrime(uint64_t value) {
     }
     if (icount == 2) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
@@ -40,14 +39,14 @@ uint64_t nextPrime(uint64_t value) {
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-    if (hbound < 3) { 
-        return 0; 
+    if (hbound < 3) {
+        return 0;
     }
     if (hbound == 3) {
         return 2;
     }
     uint64_t sum = 0;
-    for (int i = 2;i < hbound;i++) {
+    for (int i = 2;i < hbound; i++) {
         if (checkPrime(i) == true) {
             sum = sum + i;
         }
